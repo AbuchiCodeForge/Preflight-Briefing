@@ -5,7 +5,7 @@ FastAPI application.
 from fastapi import FastAPI
 
 app = FastAPI(title="Flight Briefer")
-
+#need to redo
 @app.get("/")
 def read_root():
     fetcher = MetarFetcher()
@@ -16,3 +16,4 @@ def read_root():
 
     print(f"--- Raw METAR for {station} ---")
     print(raw_metar)
+    
